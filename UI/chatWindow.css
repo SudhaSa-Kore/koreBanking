@@ -34,7 +34,7 @@
     position: fixed;
     bottom: 10px;
     right: 10px;
-    width: 400px;   
+    width: 600px;   
     min-width: 400px;
     max-height: 90%;
     height: 90%;
@@ -77,8 +77,15 @@
     -moz-box-shadow: none;
     box-shadow: none;
 }
+.close-btn{
+	display:none;
+}
 .kore-chat-window.minimize .kore-chat-body,.kore-chat-window.minimize .kore-chat-footer,.kore-chat-window.minimize .kore-chat-header{
     display: none;
+}
+.kore-chat-window .accounttype{
+	margin-top:8px;
+	margin-bottom:8px;
 }
 .kore-chat-window.minimize .minimized-title{
     float: left;
