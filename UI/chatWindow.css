@@ -77,7 +77,7 @@
     -moz-box-shadow: none;
     box-shadow: none;
 }
-.close-btn{
+.reload-btn{
 	display:none;
 }
 .kore-chat-window.minimize .kore-chat-body,.kore-chat-window.minimize .kore-chat-footer,.kore-chat-window.minimize .kore-chat-header{
@@ -137,10 +137,11 @@
     background-size: cover;
 }
 .kore-chat-window  .kore-chat-header {
+	
     border-bottom:1px solid #EEEEEE;
-    color: #222;
+    color: #fff;
     font-size: 16px;
-    background-color: white;
+    background-color: #00999F;
     font-family: arial,sans-serif;
     height: 50px;
     line-height: 49px;

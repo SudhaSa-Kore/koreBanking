@@ -5,8 +5,7 @@
 		<script src="libs/jquery.tmpl.min.js" type="text/javascript"></script>
 		<script src="libs/jquery-ui.min.js" type="text/javascript"></script>
 		<link href="libs/jquery-ui.min.css" rel="stylesheet"></link>
-		<link href="UI/libs/jquery-ui.min.css" rel="stylesheet"/>
-       <link href="UI/chatWindow.css" rel="stylesheet"/>
+		
 		<script src="../kore-bot-sdk-client.js"></script>
 		<script src="chatWindow.js" type="text/javascript"></script>
 		<link href="chatWindow.css" rel="stylesheet"></link>
@@ -29,6 +28,7 @@
 				})
 			}
 
+			
 			var botOptions = {};
 			botOptions.logLevel = 'debug';
 			botOptions.koreAPIUrl = "https://devbots.kore.com/api/";
@@ -49,5 +49,8 @@
 		</script>
 	</head>
 	<body background="../libs/images/banking.png">
-</body>	
+		<div id="chatContainer" >
+		<button class="openChatWindow" style="float:right;margin:1% 4%;">Open Chat Window</button>
+		</div>
+	</body>
 </html>
