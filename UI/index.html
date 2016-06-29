@@ -34,21 +34,24 @@
 			botOptions.koreAPIUrl = "https://devbots.kore.com/api/";
 			botOptions.assertionFn = assertion;
 			botOptions.isLoggedIn = false; // false: triggers anonymus flow. set it to true for log-in flow.
-			botOptions.clientId   = "cs-d8862690-fa2a-5dc8-b5eb-e9e06a6269ab";
-			botOptions.botInfo = {name:"KORE Banking","_id":"st-8dd15c5b-d0ec-5df9-b168-a0f4163ac5bd"}; // pass bot name and stream id
+			//botOptions.clientId   = "cs-d8862690-fa2a-5dc8-b5eb-e9e06a6269ab";
+			botOptions.clientId   = "cs-841bf454-71b4-5b9a-aeaf-bb9ab08426c9";
+			//botOptions.botInfo = {name:"KORE Banking","_id":"st-8dd15c5b-d0ec-5df9-b168-a0f4163ac5bd"}; // pass bot name and stream id
+			botOptions.botInfo = {name:"PNC Banking","_id":"st-efa3db5d-c34b-581e-94dd-ffee25e4b32d"}; // pass bot name and stream id
 			
 			var chatConfig={
 				botOptions:botOptions
 			};
 
 			koreBotChat().show(chatConfig);
+			
 			$('.openChatWindow').click(function(){
 				koreBotChat().show(chatConfig);
 			});
 		});
 		</script>
 	</head>
-	<body background="../libs/images/banking.png">
+	<body background="../libs/images/screen.png">
 		<div id="chatContainer" >
 		<button class="openChatWindow" style="float:right;margin:1% 4%;">Open Chat Window</button>
 		</div>
