@@ -15,7 +15,7 @@
 
 				// Client has to fill the claims and call the callback.
 				$.ajax({
-					url: "https://devbots.kore.com/api/users/sts",
+					url: "https://pilot-bots.kore.com/api/users/sts",
 					type: 'post',
 					headers: {
 						Authorization: "bearer xyz------"
@@ -31,13 +31,13 @@
 			
 			var botOptions = {};
 			botOptions.logLevel = 'debug';
-			botOptions.koreAPIUrl = "https://devbots.kore.com/api/";
+			botOptions.koreAPIUrl = "https://pilot-bots.kore.com/api/";
 			botOptions.assertionFn = assertion;
 			botOptions.isLoggedIn = false; // false: triggers anonymus flow. set it to true for log-in flow.
 			//botOptions.clientId   = "cs-d8862690-fa2a-5dc8-b5eb-e9e06a6269ab";
-			botOptions.clientId   = "cs-841bf454-71b4-5b9a-aeaf-bb9ab08426c9";
+			botOptions.clientId   = "cs-677c427c-1c30-5145-b1c0-cac89d5d342b";
 			//botOptions.botInfo = {name:"KORE Banking","_id":"st-8dd15c5b-d0ec-5df9-b168-a0f4163ac5bd"}; // pass bot name and stream id
-			botOptions.botInfo = {name:"PNC Banking","_id":"st-efa3db5d-c34b-581e-94dd-ffee25e4b32d"}; // pass bot name and stream id
+			botOptions.botInfo = {name:"Kore Banking","_id":"st-439a9f0d-cf24-58e4-a8aa-0141d38cfaf1"}; // pass bot name and stream id
 			
 			var chatConfig={
 				botOptions:botOptions
